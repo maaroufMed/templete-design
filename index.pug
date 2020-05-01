@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title website pure javascript
+        link(rel="stylesheet", href="css/normalize.css")
+        link(rel="stylesheet", href="css/main.css")
+        link(rel="stylesheet", href="css/all.min.css")
+        link(rel="stylesheet", href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap")
+    body
+
+        //- star landing page
+        header(class= 'landing-page text-capitalize')
+            //- the overlay 
+            .overlay
+            //- star navbar
+            nav.navbar
+                //- the container
+                .container
+                    .logo
+                        a(href="#") special design
+                    ul.navigation
+                        //-each loop for item
+                        each val, index in ['home','about','testimonial','contact']
+                            li(class= (index === 0) ? "active" : "" )
+                                a(href="#")= val
+            //- end navbar
+
+            //- star intro
+            .intro
+                h1  we are 
+                    span creative 
+                    | agency
+                p Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae sint explicabo voluptate iusto repellat doloremque esse aperiam molestias iste
+            //- end intro
+        //- end landing page
+
+
+
+
+
+
+
+        //- the jQuery file
+        script(src="js/jquery-3.4.1.min.js")
+
+        //- main file js
+        script(src="js/main.js")
